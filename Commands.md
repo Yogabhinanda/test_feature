@@ -1,77 +1,150 @@
-#Commands
-Set global username and email for Git (Locally).
+# Git Commands Guide
+
+This document provides a comprehensive list of essential Git commands along with their descriptions. Use these commands to efficiently manage your Git repositories.
+
+---
+
+## Setting Up Git
+
+### Set Global Username and Email (Locally)
+Set your global username and email for Git configuration.
+```bash
 git config --global user.name "<your github username>"
 git config --global user.email "<your email>"
+```
 
+---
 
-Initialise an empty Git Repository
+## Repository Initialization and Cloning
+
+### Initialize an Empty Git Repository
+Start a new Git repository in your current directory.
+```bash
 git init
+```
 
-
-Clone an existing Git Repository
+### Clone an Existing Git Repository
+Clone a remote repository to your local machine.
+```bash
 git clone <repository URL>
+```
 
+---
 
-Add file/stage to git
+## Adding and Committing Changes
+
+### Add a Specific File to Git
+Stage a specific file to include it in the next commit.
+```bash
 git add <filename>
+```
 
-
-Add all the files to git
+### Add All Files to Git
+Stage all files in the current directory.
+```bash
 git add .
+```
 
-
-Commit all the staged files to git
+### Commit All Staged Files
+Record changes to the repository with a descriptive message.
+```bash
 git commit -m "<your commit message>"
+```
 
-
-Restore the file from being modified to Tracked
+### Restore a File from Being Modified to Tracked
+Undo changes to a specific file and revert it to the tracked state.
+```bash
 git restore <filename>
 git checkout <filename>
+```
 
+---
 
-Show the status of your Git repository
+## Checking Repository Status
+
+### Show Repository Status
+Display the current state of the working directory and staging area.
+```bash
 git status
+```
 
-
-Show the branches of your git repository
+### Show Branches in the Repository
+List all branches in the repository.
+```bash
 git branch
+```
 
+---
 
-Checkout to a new branch (Switch to new branch)
+## Branch Management
+
+### Create and Switch to a New Branch
+Create a new branch and switch to it.
+```bash
 git checkout -b <branch name>
+```
 
-
-Checkout to an existing branch (Switch to branch)
+### Switch to an Existing Branch
+Change to an existing branch.
+```bash
 git checkout <branch name>
+```
 
-
-Remove a branch from Git
+### Remove a Branch from Git
+Delete a branch locally.
+```bash
 git branch -d <branch name>
+```
 
+---
 
-Show remote origin URL
+## Remote Repository Management
+
+### Show Remote Origin URL
+Display the remote URLs associated with the repository.
+```bash
 git remote -v
+```
 
-
-Add remote origin URL
+### Add Remote Origin URL
+Link a remote repository to your local repository.
+```bash
 git remote add origin <your remote git URL>
+```
 
-
-Remove remote origin URL
+### Remove Remote Origin URL
+Remove the association with a remote repository.
+```bash
 git remote remove origin
+```
 
-
-Fetch all the remote branches
+### Fetch All Remote Branches
+Retrieve updates from the remote repository without merging.
+```bash
 git fetch
+```
 
+---
 
-Push your local changes to remote branch
+## Pushing and Pulling Changes
+
+### Push Local Changes to Remote Branch
+Upload local commits to the specified branch on the remote repository.
+```bash
 git push origin <branch name>
+```
 
-
-Pull your remote changes to local branch
+### Pull Remote Changes to Local Branch
+Download and integrate changes from the specified branch on the remote repository.
+```bash
 git pull origin <branch name>
+```
 
+---
 
-Check your git commits and logs
+## Checking Commit History
+
+### View Git Commits and Logs
+Display the commit history of the repository.
+```bash
 git log
